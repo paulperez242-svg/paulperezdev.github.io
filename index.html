@@ -61,6 +61,17 @@ nav{background:rgba(20,20,20,0.96);padding:18px 48px;display:flex;justify-conten
 .skills-list li{font-size:13px;color:#444;padding-bottom:10px;border-bottom:1px solid #f0ece6;line-height:1.5}
 .skills-list li:last-child{border-bottom:none}
 
+.preuves-wrap{background:#faf9f7;border-top:1px solid #e8e4de;padding:64px 48px;display:flex;justify-content:center}
+.preuves-inner{max-width:640px;width:100%}
+.preuves-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:0}
+.preuve-card{background:#fff;border:0.5px solid #e8e4de;padding:24px;position:relative}
+.preuve-img{width:100%;aspect-ratio:16/9;background:#f0ece6;display:flex;align-items:center;justify-content:center;margin-bottom:16px;overflow:hidden}
+.preuve-img img{width:100%;height:100%;object-fit:cover;filter:blur(6px) brightness(.95);transform:scale(1.05)}
+.preuve-badge{position:absolute;top:32px;right:32px;background:#1a1a1a;color:#fff;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px}
+.preuve-title{font-family:'Playfair Display',serif;font-size:15px;color:#1a1a1a;margin-bottom:6px}
+.preuve-desc{font-size:12px;color:#888;line-height:1.7}
+.preuve-stat{font-family:'Playfair Display',serif;font-size:18px;color:#1a1a1a;margin-top:12px;font-style:italic}
+
 .photo-wrap{background:linear-gradient(rgba(0,0,0,0.48),rgba(0,0,0,0.35)),url('sport.jpg') center/cover no-repeat;min-height:340px;display:flex;align-items:center;justify-content:center;padding:48px}
 .photo-quote{max-width:520px;text-align:center}
 .photo-quote blockquote{font-family:'Playfair Display',serif;font-size:22px;color:#fff;line-height:1.5;font-style:italic;margin-bottom:12px}
@@ -91,6 +102,8 @@ footer{background:#111;padding:20px 48px;text-align:center;font-size:10px;color:
   .story-meta{text-align:left}
   .skills-wrap{padding:52px 24px}
   .skills-cols{grid-template-columns:1fr;gap:32px}
+  .preuves-wrap{padding:52px 24px}
+  .preuves-grid{grid-template-columns:1fr}
   .contact-wrap{padding:40px 24px}
   .contact-card{padding:32px 24px}
   footer{padding:16px 20px}
@@ -104,6 +117,7 @@ footer{background:#111;padding:20px 48px;text-align:center;font-size:10px;color:
   <div class="nav-links">
     <a href="#parcours">Parcours</a>
     <a href="#competences">Méthode</a>
+    <a href="#preuves">Réalisations</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -138,7 +152,7 @@ footer{background:#111;padding:20px 48px;text-align:center;font-size:10px;color:
       <div class="data-label">Prospects<br>traités</div>
     </div>
     <div class="data-item">
-      <div class="data-num">5</div>
+      <div class="data-num">8</div>
       <div class="data-label">Outils métier<br>développés</div>
     </div>
     <div class="data-item">
@@ -160,12 +174,13 @@ footer{background:#111;padding:20px 48px;text-align:center;font-size:10px;color:
       <div>
         <div class="story-role">Alternance</div>
         <div class="story-title">Business Developer - SportecFrance</div>
-        <div class="story-desc">Cycle commercial B2B complet en autonomie sur une solution EMS technique. 150 000 € de CA, 60 propositions émises, contrats de 5 000 à 20 000 €. Interlocuteurs : dirigeants, entrepreneurs, structures holding. Développement de 3 outils métier complets — enrichissement automatisé via API, CRM Sellsy, outil de suivi des objections — soit environ un mois de développement en parallèle de la formation.</div>
+        <div class="story-desc">Cycle commercial B2B complet en autonomie sur une solution EMS technique. 150 000 € de CA, 60 propositions émises, contrats de 5 000 à 20 000 €. Interlocuteurs : dirigeants, entrepreneurs, structures holding. Aucune documentation existante à la prise de poste — process construits et formalisés de A à Z, dont un manuel opérationnel complet livré sur Notion pour assurer la continuité. Développement de 8 outils métier en parallèle de la formation : enrichissement automatisé via API, CRM Sellsy, suivi des objections, gestion de stock, simulateur LOA, automatisations Excel.</div>
         <div class="story-pills">
           <span class="pill">Négociation & cycle de vente long</span>
           <span class="pill">CRM Sellsy</span>
           <span class="pill">Automatisation Google Apps Script</span>
           <span class="pill">Grands comptes</span>
+          <span class="pill">Documentation & transmission</span>
         </div>
       </div>
     </div>
@@ -249,6 +264,55 @@ footer{background:#111;padding:20px 48px;text-align:center;font-size:10px;color:
           <li>Stratégie marketing digital</li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="preuves-wrap" id="preuves">
+  <div class="preuves-inner">
+    <div class="story-label">Réalisations - preuves terrain</div>
+    <div class="preuves-grid">
+
+      <div class="preuve-card">
+        <div class="preuve-badge">CRM</div>
+        <div class="preuve-img">
+          <img src="preuve_pipeline.jpg" alt="Pipeline CRM Sellsy">
+        </div>
+        <div class="preuve-title">Pipeline commercial B2B</div>
+        <div class="preuve-desc">Vue du pipeline CRM Sellsy structuré et administré en autonomie. Suivi de toutes les étapes du cycle de vente, de la prospection au closing.</div>
+        <div class="preuve-stat">150 000 € de CA</div>
+      </div>
+
+      <div class="preuve-card">
+        <div class="preuve-badge">Phoning</div>
+        <div class="preuve-img">
+          <img src="preuve_appels.jpg" alt="Statistiques appels">
+        </div>
+        <div class="preuve-title">Activité phoning tracée</div>
+        <div class="preuve-desc">Tableau de bord des appels passés en un mois. 109 appels tracés, 55 contacts aboutis, taux de joignabilité ~50%.</div>
+        <div class="preuve-stat">~50% de joignabilité</div>
+      </div>
+
+      <div class="preuve-card">
+        <div class="preuve-badge">Automatisation</div>
+        <div class="preuve-img">
+          <img src="preuve_scripts.jpg" alt="Scripts Google Apps Script">
+        </div>
+        <div class="preuve-title">Scripts d'automatisation</div>
+        <div class="preuve-desc">Suite de 3 scripts Google Apps Script développés de A à Z : enrichissement prospects via API Pappers, génération automatique de courriels, génération d'étiquettes postales.</div>
+        <div class="preuve-stat">~1 mois de développement</div>
+      </div>
+
+      <div class="preuve-card">
+        <div class="preuve-badge">Leads</div>
+        <div class="preuve-img">
+          <img src="preuve_stim.jpg" alt="Suivi leads Stim Access">
+        </div>
+        <div class="preuve-title">Suivi leads - Mission Stim Access</div>
+        <div class="preuve-desc">Tableau de suivi des leads Meta Ads construit et piloté en autonomie. Qualification, prise de RDV, relances, accompagnement jusqu'à la séance d'essai.</div>
+        <div class="preuve-stat">400+ prospects traités</div>
+      </div>
+
     </div>
   </div>
 </section>
