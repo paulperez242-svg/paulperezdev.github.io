@@ -11,7 +11,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paul Perez | Business Developer B2B | PACA</title>
-<meta name="description" content="Un parcours atypique, une méthode structurée. 150 000 € de CA généré en 10 mois.">
+<meta name="description" content="Un parcours atypique, une méthode structurée. Plus de 100 000 € de CA généré en 10 mois.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -27,10 +27,13 @@ nav{background:rgba(20,20,20,0.96);padding:18px 48px;display:flex;justify-conten
 .nav-links a:hover{color:#fff}
 
 .hero-wrap{background:linear-gradient(rgba(0,0,0,0.52),rgba(0,0,0,0.38)),url('hero.jpg') center/cover no-repeat;min-height:92vh;display:flex;align-items:center;padding:64px 48px}
-.hero-inner{max-width:560px}
+.hero-inner{display:flex;align-items:center;gap:64px;max-width:960px;width:100%}
+.hero-text{max-width:500px}
+.hero-portrait{flex-shrink:0}
+.hero-portrait img{width:220px;height:280px;object-fit:cover;object-position:top;filter:brightness(.95) contrast(1.05)}
 .hero-eyebrow{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:20px}
-.hero-inner h1{font-size:42px;line-height:1.15;color:#fff;margin-bottom:18px}
-.hero-inner h1 em{font-style:italic;color:rgba(255,255,255,.75)}
+.hero-text h1{font-size:42px;line-height:1.15;color:#fff;margin-bottom:18px}
+.hero-text h1 em{font-style:italic;color:rgba(255,255,255,.75)}
 .hero-stat{font-family:'Playfair Display',serif;font-size:17px;color:rgba(255,255,255,.85);font-style:italic;margin-bottom:32px;line-height:1.7;border-left:2px solid rgba(255,255,255,.3);padding-left:16px}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
 .btn-w{background:#fff;color:#1a1a1a;padding:12px 24px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;transition:opacity .2s}
@@ -62,29 +65,44 @@ nav{background:rgba(20,20,20,0.96);padding:18px 48px;display:flex;justify-conten
 
 .skills-wrap{background:#fff;border-top:1px solid #e8e4de;padding:64px 48px;display:flex;justify-content:center}
 .skills-inner{max-width:640px;width:100%}
-.skills-cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:0}
+.skills-cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
 .skills-col-title{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#8a7f72;margin-bottom:20px}
 .skills-list{list-style:none;display:flex;flex-direction:column;gap:10px}
 .skills-list li{font-size:13px;color:#444;padding-bottom:10px;border-bottom:1px solid #f0ece6;line-height:1.5}
 .skills-list li:last-child{border-bottom:none}
 
 .preuves-wrap{background:#faf9f7;border-top:1px solid #e8e4de;padding:64px 48px;display:flex;justify-content:center}
-.preuves-inner{max-width:640px;width:100%}
+.preuves-inner{max-width:900px;width:100%}
 .preuves-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:0}
+
 .preuve-card{background:#fff;border:0.5px solid #e8e4de;padding:24px;position:relative}
-.preuve-img{width:100%;aspect-ratio:16/9;background:#f0ece6;display:flex;align-items:center;justify-content:center;margin-bottom:16px;overflow:hidden}
-.preuve-img img{width:100%;height:100%;object-fit:cover;filter:blur(6px) brightness(.95);transform:scale(1.05)}
-.preuve-badge{position:absolute;top:32px;right:32px;background:#1a1a1a;color:#fff;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px}
+.preuve-card.blue{border:2px solid #2980b9;background:#f0f7ff}
+.preuve-badge{display:inline-block;background:#1a1a1a;color:#fff;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 8px;margin-bottom:14px}
+.preuve-card.blue .preuve-badge{background:#2980b9}
 .preuve-title{font-family:'Playfair Display',serif;font-size:15px;color:#1a1a1a;margin-bottom:6px}
 .preuve-desc{font-size:12px;color:#888;line-height:1.7}
 .preuve-stat{font-family:'Playfair Display',serif;font-size:18px;color:#1a1a1a;margin-top:12px;font-style:italic}
+
+.carousel{position:relative;width:100%;overflow:hidden;margin-bottom:16px}
+.carousel-track{display:flex;transition:transform .4s ease}
+.carousel-slide{min-width:100%;aspect-ratio:16/6;overflow:hidden}
+.carousel-slide img{width:100%;height:100%;object-fit:cover;filter:blur(2px) brightness(.97);transform:scale(1.02)}
+.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:16px;z-index:10}
+.carousel-btn.prev{left:8px}
+.carousel-btn.next{right:8px}
+.carousel-dots{display:flex;justify-content:center;gap:6px;margin-top:8px}
+.dot{width:6px;height:6px;border-radius:50%;background:#ccc;cursor:pointer;transition:background .2s}
+.dot.active{background:#1a1a1a}
+
+.preuve-img-single{width:100%;aspect-ratio:16/6;overflow:hidden;margin-bottom:16px}
+.preuve-img-single img{width:100%;height:100%;object-fit:cover;filter:blur(2px) brightness(.97);transform:scale(1.02)}
 
 .photo-wrap{background:linear-gradient(rgba(0,0,0,0.48),rgba(0,0,0,0.35)),url('sport.jpg') center/cover no-repeat;min-height:340px;display:flex;align-items:center;justify-content:center;padding:48px}
 .photo-quote{max-width:520px;text-align:center}
 .photo-quote blockquote{font-family:'Playfair Display',serif;font-size:22px;color:#fff;line-height:1.5;font-style:italic;margin-bottom:12px}
 .photo-quote cite{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.45)}
 
-.contact-wrap{background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.45)),url('montagne.jpg') center/cover no-repeat;min-height:320px;display:flex;align-items:center;justify-content:center;padding:56px 48px}
+.contact-wrap{background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.45)),url('montagne.png') center/cover no-repeat;min-height:320px;display:flex;align-items:center;justify-content:center;padding:56px 48px}
 .contact-card{background:rgba(250,249,247,0.96);padding:44px 52px;max-width:540px;width:100%;text-align:center}
 .contact-card h2{font-size:26px;color:#1a1a1a;margin-bottom:10px}
 .contact-card p{font-family:'Playfair Display',serif;font-size:14px;color:#777;font-style:italic;margin-bottom:28px;line-height:1.7}
@@ -100,7 +118,9 @@ footer{background:#111;padding:20px 48px;text-align:center;font-size:10px;color:
   nav{padding:14px 20px}
   .nav-links{display:none}
   .hero-wrap{padding:48px 24px;min-height:80vh}
-  .hero-inner h1{font-size:30px}
+  .hero-inner{flex-direction:column-reverse;gap:32px}
+  .hero-portrait img{width:140px;height:180px}
+  .hero-text h1{font-size:28px}
   .data-wrap{padding:0 20px}
   .data-grid{grid-template-columns:repeat(2,1fr)}
   .data-item:nth-child(5){grid-column:span 2;border-right:none}
@@ -135,15 +155,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="hero-wrap">
   <div class="hero-inner">
-    <div class="hero-eyebrow">Business Developer B2B | Ouvert CDI | PACA</div>
-    <h1>Un parcours atypique,<br><em>une méthode structurée.</em></h1>
-    <div class="hero-stat">
-      150 000 € de CA généré en 10 mois,<br>
-      en alternance, au sein d'une jeune entreprise en croissance.
+    <div class="hero-text">
+      <div class="hero-eyebrow">Business Developer B2B | Ouvert CDI | PACA</div>
+      <h1>Un parcours atypique,<br><em>une méthode structurée.</em></h1>
+      <div class="hero-stat">
+        Plus de 100 000 € de CA généré en 10 mois,<br>
+        en alternance, au sein d'une jeune entreprise en croissance.
+      </div>
+      <div class="hero-btns">
+        <a href="https://calendly.com/paulperez242/30min" target="_blank" class="btn-w">Prendre RDV — 30 min</a>
+        <a href="https://linkedin.com/in/paul-perez-bdev" target="_blank" class="btn-wl">LinkedIn</a>
+      </div>
     </div>
-    <div class="hero-btns">
-      <a href="https://calendly.com" target="_blank" class="btn-w">Prendre RDV — 20 min</a>
-      <a href="https://linkedin.com/in/paul-perez-bdev" target="_blank" class="btn-wl">LinkedIn</a>
+    <div class="hero-portrait">
+      <img src="portrait.jpg" alt="Paul Perez — Business Developer B2B">
     </div>
   </div>
 </section>
@@ -151,7 +176,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="data-wrap">
   <div class="data-grid">
     <div class="data-item">
-      <div class="data-num">150K<span class="data-unit">€</span></div>
+      <div class="data-num">+100K<span class="data-unit">€</span></div>
       <div class="data-label">CA généré<br>en 10 mois</div>
     </div>
     <div class="data-item">
@@ -167,8 +192,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="data-label">Outils métier<br>développés</div>
     </div>
     <div class="data-item">
-      <div class="data-num">~50<span class="data-unit">%</span></div>
-      <div class="data-label">Taux de contact<br>phoning</div>
+      <div class="data-num">12</div>
+      <div class="data-label">Étapes cycle<br>de vente</div>
     </div>
   </div>
 </section>
@@ -179,13 +204,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="story-block">
       <div class="story-meta">
-        <div class="story-date">2025 - aujourd'hui</div>
+        <div class="story-date">2025 — aujourd'hui</div>
         <div class="story-place">Éguilles, PACA</div>
       </div>
       <div>
         <div class="story-role">Alternance</div>
-        <div class="story-title">Business Developer - SportecFrance</div>
-        <div class="story-desc">Cycle commercial B2B complet en autonomie sur une solution EMS technique. 150 000 € de CA, 60 propositions émises, contrats de 5 000 à 20 000 €. Interlocuteurs : dirigeants, entrepreneurs, structures holding. Aucune documentation existante à la prise de poste — process construits et formalisés de A à Z, dont un manuel opérationnel complet livré sur Notion pour assurer la continuité. Développement de 8 outils métier en parallèle de la formation : enrichissement automatisé via API, CRM Sellsy, suivi des objections, gestion de stock, simulateur LOA, automatisations Excel.</div>
+        <div class="story-title">Business Developer — SportecFrance</div>
+        <div class="story-desc">Cycle commercial B2B complet en autonomie sur une solution EMS technique. Plus de 100 000 € de CA, 60 propositions émises, contrats de 5 000 à 20 000 €. Interlocuteurs : dirigeants, entrepreneurs, structures holding. Aucune documentation existante à la prise de poste — process construits et formalisés de A à Z, dont un manuel opérationnel complet livré sur Notion. Développement de 8 outils métier en parallèle de la formation.</div>
         <div class="story-pills">
           <span class="pill">Négociation & cycle de vente long</span>
           <span class="pill">CRM Sellsy</span>
@@ -203,8 +228,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div>
         <div class="story-role">Alternance</div>
-        <div class="story-title">Team Leader - Decathlon</div>
-        <div class="story-desc">Management de 6 à 10 personnes. Gestion des rayons Running et Marche (TOP 4 magasin, 15-20% du CA). Pilotage des KPIs, recrutement, formation. Organisation d'un événement sportif Fitness complet — coordination logistique, coachs partenaires, communication locale.</div>
+        <div class="story-title">Team Leader — Decathlon</div>
+        <div class="story-desc">Management de 6 à 10 personnes. Gestion des rayons Running et Marche (TOP 4 magasin, 15–20% du CA). Pilotage des KPIs, recrutement, formation. Organisation d'un événement sportif Fitness complet.</div>
         <div class="story-pills">
           <span class="pill">Management</span>
           <span class="pill">KPIs & performance</span>
@@ -215,12 +240,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="story-block">
       <div class="story-meta">
-        <div class="story-date">2021 - 2023</div>
+        <div class="story-date">2021 — 2023</div>
         <div class="story-place">Jura</div>
       </div>
       <div>
         <div class="story-role">Fonctionnaire</div>
-        <div class="story-title">Gendarme - Sous-Officier</div>
+        <div class="story-title">Gendarme — Sous-Officier</div>
         <div class="story-desc">Gestion de l'urgence sur des théâtres d'intervention, encadrement de missions, prise de décision sous pression. Qualifications TICP, PSC1, SC1, Montagne (CNISAG Chamonix). Médaille de la Défense Nationale — échelon Bronze.</div>
         <div class="story-pills">
           <span class="pill">Sang-froid</span>
@@ -267,7 +292,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div>
         <div class="skills-col-title">Outils & Méthode</div>
         <ul class="skills-list">
-          <li>CRM Sellsy - déploiement & admin</li>
+          <li>CRM Sellsy — déploiement & admin</li>
           <li>Automatisation Google Apps Script</li>
           <li>Enrichissement données via API</li>
           <li>Meta Ads & Tracking UTM</li>
@@ -281,47 +306,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="preuves-wrap" id="preuves">
   <div class="preuves-inner">
-    <div class="story-label">Réalisations - preuves terrain</div>
+    <div class="story-label">Réalisations — preuves terrain</div>
     <div class="preuves-grid">
 
       <div class="preuve-card">
-        <div class="preuve-badge">CRM</div>
-        <div class="preuve-img">
-          <img src="preuve_pipeline.jpg" alt="Pipeline CRM Sellsy">
+        <div class="preuve-badge">Pipeline B2B Pro</div>
+        <div class="carousel" id="carousel-pipeline">
+          <div class="carousel-track" id="track-pipeline">
+            <div class="carousel-slide"><img src="pipeline_1.png" alt="Pipeline B2B étape 1"></div>
+            <div class="carousel-slide"><img src="pipeline_2.png" alt="Pipeline B2B étape 2"></div>
+            <div class="carousel-slide"><img src="pipeline_3.png" alt="Pipeline B2B étape 3"></div>
+          </div>
+          <button class="carousel-btn prev" onclick="moveCarousel('pipeline',-1)">&#8249;</button>
+          <button class="carousel-btn next" onclick="moveCarousel('pipeline',1)">&#8250;</button>
         </div>
-        <div class="preuve-title">Pipeline commercial B2B</div>
-        <div class="preuve-desc">Vue du pipeline CRM Sellsy structuré et administré en autonomie. Suivi de toutes les étapes du cycle de vente, de la prospection au closing.</div>
-        <div class="preuve-stat">150 000 € de CA</div>
+        <div class="carousel-dots" id="dots-pipeline">
+          <div class="dot active" onclick="goToSlide('pipeline',0)"></div>
+          <div class="dot" onclick="goToSlide('pipeline',1)"></div>
+          <div class="dot" onclick="goToSlide('pipeline',2)"></div>
+        </div>
+        <div class="preuve-title" style="margin-top:14px">Pipeline commercial B2B — cycle complet</div>
+        <div class="preuve-desc">Vue partielle du pipeline CRM Sellsy — cycle de 12 étapes de la prospection au SAV, structuré et administré en autonomie.</div>
+        <div class="preuve-stat">+100 000 € de CA</div>
       </div>
 
-      <div class="preuve-card">
-        <div class="preuve-badge">Phoning</div>
-        <div class="preuve-img">
-          <img src="preuve_appels.jpg" alt="Statistiques appels">
+      <div class="preuve-card blue">
+        <div class="preuve-badge">Pipeline Particuliers</div>
+        <div class="preuve-img-single">
+          <img src="pipeline_part.png" alt="Pipeline particuliers">
         </div>
-        <div class="preuve-title">Activité phoning tracée</div>
-        <div class="preuve-desc">Tableau de bord des appels passés en un mois. 109 appels tracés, 55 contacts aboutis, taux de joignabilité ~50%.</div>
-        <div class="preuve-stat">~50% de joignabilité</div>
+        <div class="preuve-title">Pipeline BtoC — marché particuliers</div>
+        <div class="preuve-desc">Gestion simultanée d'un second marché : 64 opportunités particuliers ouvertes, suivi des statuts et relances.</div>
+        <div class="preuve-stat">64 opportunités actives</div>
       </div>
 
       <div class="preuve-card">
         <div class="preuve-badge">Automatisation</div>
-        <div class="preuve-img">
-          <img src="preuve_scripts.jpg" alt="Scripts Google Apps Script">
+        <div class="preuve-img-single">
+          <img src="preuve_script.png" alt="Scripts Google Apps Script">
         </div>
-        <div class="preuve-title">Scripts d'automatisation</div>
-        <div class="preuve-desc">Suite de 3 scripts Google Apps Script développés de A à Z : enrichissement prospects via API Pappers, génération automatique de courriels, génération d'étiquettes postales.</div>
+        <div class="preuve-title">Suite d'automatisation commerciale</div>
+        <div class="preuve-desc">3 scripts Google Apps Script développés de A à Z : enrichissement prospects via API Pappers, génération automatique de courriels, génération d'étiquettes postales.</div>
         <div class="preuve-stat">~1 mois de développement</div>
       </div>
 
       <div class="preuve-card">
-        <div class="preuve-badge">Leads</div>
-        <div class="preuve-img">
-          <img src="preuve_stim.jpg" alt="Suivi leads Stim Access">
+        <div class="preuve-badge">Outil métier</div>
+        <div class="preuve-img-single">
+          <img src="preuve_stock.png" alt="Gestion de stock">
         </div>
-        <div class="preuve-title">Suivi leads - Mission Stim Access</div>
-        <div class="preuve-desc">Tableau de suivi des leads Meta Ads construit et piloté en autonomie. Qualification, prise de RDV, relances, accompagnement jusqu'à la séance d'essai.</div>
-        <div class="preuve-stat">400+ prospects traités</div>
+        <div class="preuve-title">Outil de gestion de stock automatisé</div>
+        <div class="preuve-desc">Tableau de bord Excel développé de A à Z : suivi des combinaisons EMS par taille, sexe et client, alertes automatiques sur les seuils critiques.</div>
+        <div class="preuve-stat">89 combinaisons trackées</div>
       </div>
 
     </div>
@@ -337,8 +373,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="contact-wrap" id="contact">
   <div class="contact-card">
-    <h2>Prenons contact :</h2>
-    <p>Disponible pour un échange de 20 minutes.<br>Prenez directement un créneau.</p>
+    <h2>Prenons contact</h2>
+    <p>Disponible pour un échange de 30 minutes.<br>Prenez directement un créneau.</p>
     <div class="contact-btns">
       <a href="https://calendly.com/paulperez242/30min" target="_blank" class="c-dark">Prendre RDV</a>
       <a href="mailto:paul@perezdev.fr" class="c-light">paul@perezdev.fr</a>
@@ -348,6 +384,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <footer>perezdev.fr &nbsp;·&nbsp; Paul Perez &nbsp;·&nbsp; PACA &nbsp;·&nbsp; 2026</footer>
+
+<script>
+const carousels = {};
+
+function initCarousel(id) {
+  carousels[id] = { current: 0, total: document.querySelectorAll(`#track-${id} .carousel-slide`).length };
+}
+
+function moveCarousel(id, dir) {
+  if (!carousels[id]) initCarousel(id);
+  const c = carousels[id];
+  c.current = (c.current + dir + c.total) % c.total;
+  updateCarousel(id);
+}
+
+function goToSlide(id, index) {
+  if (!carousels[id]) initCarousel(id);
+  carousels[id].current = index;
+  updateCarousel(id);
+}
+
+function updateCarousel(id) {
+  const c = carousels[id];
+  document.getElementById(`track-${id}`).style.transform = `translateX(-${c.current * 100}%)`;
+  document.querySelectorAll(`#dots-${id} .dot`).forEach((d, i) => {
+    d.classList.toggle('active', i === c.current);
+  });
+}
+
+initCarousel('pipeline');
+</script>
 
 </body>
 </html>
