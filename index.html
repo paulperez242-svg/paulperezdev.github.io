@@ -11,7 +11,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paul Perez | Business Developer B2B | PACA</title>
-<meta name="description" content="Un parcours atypique, une méthode structurée. Plus de 150 000 € de CA généré en 10 mois.">
+<meta name="description" content="Un parcours atypique, une méthode structurée. Plus de 100 000 € de CA généré en 10 mois.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -26,6 +26,7 @@ nav{background:rgba(20,20,20,0.96);padding:18px 48px;display:flex;justify-conten
 .nav-links a{color:rgba(255,255,255,.5);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;transition:color .2s}
 .nav-links a:hover{color:#fff}
 
+/* HERO */
 .hero-wrap{min-height:92vh;display:flex;align-items:stretch}
 .hero-left{background:#111;display:flex;align-items:center;padding:64px 48px;flex:1}
 .hero-text{max-width:420px}
@@ -41,6 +42,7 @@ nav{background:rgba(20,20,20,0.96);padding:18px 48px;display:flex;justify-conten
 .btn-wl{background:transparent;color:#fff;padding:12px 24px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,.4);cursor:pointer;transition:all .2s}
 .btn-wl:hover{background:rgba(255,255,255,.08)}
 
+/* DATA */
 .data-wrap{background:#1a1a1a;padding:0 48px}
 .data-grid{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid rgba(255,255,255,.08)}
 .data-item{padding:32px 16px;border-right:1px solid rgba(255,255,255,.08);text-align:center}
@@ -49,6 +51,7 @@ nav{background:rgba(20,20,20,0.96);padding:18px 48px;display:flex;justify-conten
 .data-unit{font-size:13px;color:rgba(255,255,255,.4);display:block;margin-top:2px}
 .data-label{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:8px;line-height:1.5}
 
+/* STORY */
 .story-wrap{background:#faf9f7;padding:80px 48px;display:flex;justify-content:center}
 .story-inner{max-width:640px;width:100%}
 .story-label{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#8a7f72;margin-bottom:40px}
@@ -63,6 +66,7 @@ nav{background:rgba(20,20,20,0.96);padding:18px 48px;display:flex;justify-conten
 .story-pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
 .pill{font-size:10px;letter-spacing:.5px;color:#8a7f72;padding:3px 0;border-bottom:1px solid #d5d0c8}
 
+/* SKILLS */
 .skills-wrap{background:#fff;border-top:1px solid #e8e4de;padding:64px 48px;display:flex;justify-content:center}
 .skills-inner{max-width:640px;width:100%}
 .skills-cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
@@ -71,6 +75,7 @@ nav{background:rgba(20,20,20,0.96);padding:18px 48px;display:flex;justify-conten
 .skills-list li{font-size:13px;color:#444;padding-bottom:10px;border-bottom:1px solid #f0ece6;line-height:1.5}
 .skills-list li:last-child{border-bottom:none}
 
+/* PREUVES */
 .preuves-wrap{background:#faf9f7;border-top:1px solid #e8e4de;padding:64px 48px;display:flex;justify-content:center}
 .preuves-inner{max-width:900px;width:100%}
 .preuves-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:0}
@@ -83,6 +88,7 @@ nav{background:rgba(20,20,20,0.96);padding:18px 48px;display:flex;justify-conten
 .preuve-desc{font-size:12px;color:#888;line-height:1.7}
 .preuve-stat{font-family:'Playfair Display',serif;font-size:18px;color:#1a1a1a;margin-top:12px;font-style:italic}
 
+/* CAROUSEL */
 .carousel{position:relative;width:100%;overflow:hidden;margin-bottom:16px}
 .carousel-track{display:flex;transition:transform .4s ease}
 .carousel-slide{min-width:100%;aspect-ratio:16/6;overflow:hidden}
@@ -97,6 +103,7 @@ nav{background:rgba(20,20,20,0.96);padding:18px 48px;display:flex;justify-conten
 .preuve-img-single{width:100%;aspect-ratio:16/6;overflow:hidden;margin-bottom:16px}
 .preuve-img-single img{width:100%;height:100%;object-fit:cover;filter:brightness(.97)}
 
+/* PHOTO & CONTACT */
 .photo-wrap{background:linear-gradient(rgba(0,0,0,0.48),rgba(0,0,0,0.35)),url('sport.jpg') center/cover no-repeat;min-height:340px;display:flex;align-items:center;justify-content:center;padding:48px}
 .photo-quote{max-width:520px;text-align:center}
 .photo-quote blockquote{font-family:'Playfair Display',serif;font-size:22px;color:#fff;line-height:1.5;font-style:italic;margin-bottom:12px}
@@ -114,26 +121,128 @@ nav{background:rgba(20,20,20,0.96);padding:18px 48px;display:flex;justify-conten
 
 footer{background:#111;padding:20px 48px;text-align:center;font-size:10px;color:rgba(255,255,255,.25);letter-spacing:1.5px;text-transform:uppercase}
 
+/* =============================================
+   RESPONSIVE MOBILE — 768px et moins
+   ============================================= */
 @media(max-width:768px){
+
+  /* NAV */
   nav{padding:14px 20px}
   .nav-links{display:none}
-  .hero-wrap{padding:48px 24px;min-height:80vh}
-  .hero-inner{flex-direction:column-reverse;gap:32px}
-  .hero-portrait img{width:140px;height:180px}
-  .hero-text h1{font-size:28px}
+
+  /* HERO : empilement portrait au-dessus du texte */
+  .hero-wrap{
+    flex-direction:column;
+    min-height:auto;
+  }
+  .hero-right{
+    width:100%;
+    height:260px;
+    flex-shrink:0;
+    order:-1;
+  }
+  .hero-right img{
+    object-position:top center;
+  }
+  .hero-left{
+    padding:36px 20px 44px;
+    flex:none;
+    width:100%;
+  }
+  .hero-text{
+    max-width:100%;
+  }
+  .hero-eyebrow{
+    font-size:10px;
+    margin-bottom:14px;
+  }
+  .hero-text h1{
+    font-size:28px;
+    margin-bottom:14px;
+  }
+  .hero-stat{
+    font-size:15px;
+    margin-bottom:24px;
+  }
+  .hero-btns{
+    flex-direction:column;
+    gap:10px;
+  }
+  .btn-w,.btn-wl{
+    text-align:center;
+    padding:14px 20px;
+    width:100%;
+  }
+
+  /* DATA GRID : 2 colonnes + 5e item pleine largeur */
   .data-wrap{padding:0 20px}
-  .data-grid{grid-template-columns:repeat(2,1fr)}
-  .data-item:nth-child(5){grid-column:span 2;border-right:none}
-  .story-wrap{padding:52px 24px}
-  .story-block{grid-template-columns:1fr;gap:12px}
+  .data-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+  .data-item{padding:22px 12px}
+  .data-num{font-size:24px}
+  .data-item:nth-child(5){
+    grid-column:span 2;
+    border-right:none;
+  }
+
+  /* STORY */
+  .story-wrap{padding:48px 20px}
+  .story-block{
+    grid-template-columns:1fr;
+    gap:10px;
+  }
   .story-meta{text-align:left}
-  .skills-wrap{padding:52px 24px}
-  .skills-cols{grid-template-columns:1fr;gap:32px}
-  .preuves-wrap{padding:52px 24px}
-  .preuves-grid{grid-template-columns:1fr}
-  .contact-wrap{padding:40px 24px}
-  .contact-card{padding:32px 24px}
+  .story-title{font-size:16px}
+
+  /* SKILLS */
+  .skills-wrap{padding:48px 20px}
+  .skills-cols{
+    grid-template-columns:1fr;
+    gap:32px;
+  }
+
+  /* PREUVES */
+  .preuves-wrap{padding:48px 20px}
+  .preuves-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+  .preuve-card{padding:18px}
+
+  /* CAROUSEL : ratio plus adapté en mobile */
+  .carousel-slide{aspect-ratio:4/3}
+  .preuve-img-single{aspect-ratio:4/3}
+
+  /* CONTACT */
+  .contact-wrap{padding:36px 16px}
+  .contact-card{
+    padding:28px 20px;
+  }
+  .contact-card h2{font-size:22px}
+  .contact-btns{
+    flex-direction:column;
+    align-items:stretch;
+    gap:10px;
+  }
+  .c-dark,.c-light{
+    text-align:center;
+    padding:13px 20px;
+  }
+
+  /* FOOTER */
   footer{padding:16px 20px}
+}
+
+/* =============================================
+   PETITS MOBILES — 390px et moins (iPhone SE, petits Android)
+   ============================================= */
+@media(max-width:390px){
+  .hero-right{height:220px}
+  .hero-text h1{font-size:24px}
+  .hero-stat{font-size:14px}
+  .data-num{font-size:20px}
+  .preuve-stat{font-size:15px}
 }
 </style>
 </head>
@@ -363,6 +472,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </section>
+
 <section class="contact-wrap" id="contact">
   <div class="contact-card">
     <h2>Prenons contact</h2>
